@@ -17,8 +17,14 @@ html {
 }
 
 .box {
+    margin: 20px;
     border: 2px solid black;
 }
+
+.box:nth-child(2) {
+    padding: 20px;
+}
+
 
 .logo {
     display: flex;
@@ -70,23 +76,34 @@ nav {
     display: flex;
 }
 
-nav li {
+.o {
+    transition: background-color .4s;
+
     display: inline-block;
     border: 1px solid black;
     padding: 14px;
 }
 
-nav li>a {
+nav a {
     text-decoration: none;
+    color: black;
+    padding: 40px;
 }
 
 nav li:hover {
-    border-radius: 50%;
+    background-color: black;
 }
 
 nav a:hover {
-    color: black;
+    color: white;
 }
+
+.footer {
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+  }
+  
 
     
 
@@ -110,11 +127,15 @@ nav a:hover {
 
 @media only screen and (max-width: 768px) {
     .row {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     [class*="col-"] {
         width: 100%;
         flex: 0 0 100%;
+    }
+
+    .masthead {
+        text-align: center;
     }
 }
