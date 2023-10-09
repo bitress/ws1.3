@@ -98,6 +98,9 @@ nav {
     border: 1px solid black;
     padding: 14px;
 }
+.button-group{
+    text-align: center;
+}
 
 .o select {
     border: none;
