@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAAA?</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 
@@ -19,26 +21,26 @@
             </div>
 
             <div class="col-6">
-                    <div class="subject_name">
-                        <h3>Advanced Web Development: Front End 1 <br> BSIT 3</h3>
-                    </div>
+                <div class="subject_name">
+                    <h3>Advanced Web Development: Front End 1 <br> BSIT 3</h3>
+                </div>
             </div>
 
             <div class="col-4">
                 <div class="profile-container">
                     <div class="profile-name">
-                        Vega, Cyanne Justin 
+                        Vega, Cyanne Justin
                     </div>
                     <div class="profile-image">
-                        <img src="pfp.jpg" alt="Profile Image">
+                        <img src="pfp.png" alt="Profile Image">
                     </div>
-                    
+
                 </div>
-                </div>
-                
             </div>
-               
-               
+
+        </div>
+
+
         </div>
     </header>
 
@@ -46,22 +48,27 @@
         <div class="box">
             <nav>
                 <ul>
-                    <li class="o"><a href="http://">WS1.3</a></li>
-                    <li class="o"><a href="http://">__</a></li>
-                    <li class="o"><a href="http://">__</a></li>
-                    <li class="o"><a href="http://">__</a></li>
-                    <li class="o"><a href="http://">__</a></li>
+                    <li class="o"><a href="#">WS1.3</a></li>
+                    <li class="o"><a href="#">__</a></li>
+                    <li class="o"><a href="#">__</a></li>
+                    <li class="o"><a href="#">__</a></li>
+                    <li class="o"><a href="#">__</a></li>
                 </ul>
             </nav>
-            
 
-            <div class="ml-4"> 
 
+            <!-- 
                 <div class="button-group">
                     <button class="tablinks" onclick="bitress.Utils.tabs(event, 'employee_tab')">Employee Profile</button>
-                    <button class="tablinks" onclick="bitress.Utils.tabs(event, 'buto')">Report</button>
+                    <button class="tablinks" onclick="bitress.Utils.tabs(event, 'e')">Report</button>
                 </div>
-            </div>
+                <div class="box-content">
+                    <div id="employee_tab" class="tabcontent">
+                    </div>
+                    <div id="e" class="tabcontent">
+                        <p>e is the capital city of England.</p>
+                    </div>
+                </div> -->
 
 
             <div class="box">
@@ -74,76 +81,78 @@
                         <div class="col-4">
                             <div class="input-group">
                                 <label class="label">Lastname</label>
-                                <input name="Lastname" id="lastname" class="input" type="email">
+                                <input name="lastname" id="lastname" class="input" type="text"
+                                    placeholder="Enter your Last Name">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="input-group">
                                 <label class="label">FirstName</label>
-                                <input name="Lastname" id="firstname" class="input" type="email">
+                                <input name="firstname" id="firstname" class="input" type="text"
+                                    placeholder="Enter your First Name">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="input-group">
                                 <label class="label">Middle Name</label>
-                                <input name="Lastname" id="middlename" class="input" type="email">
+                                <input name="middlename" id="middlename" class="input" type="text"
+                                    placeholder="Enter your Middle Name">
                             </div>
                         </div>
-                        </div>
+                    </div>
 
-                        <div class="row">
+                    <div class="row">
                         <div class="col-4">
                             <div class="input-group">
                                 <label class="label">Birthdate</label>
-                                <input name="birthdate" id="Email" class="input" type="date">
-                            </div>        
+                                <input name="birthdate" id="birthdate" class="input" type="date">
+                            </div>
                         </div>
 
                         <div class="col-8">
                             <div class="input-group">
                                 <label class="label">Address</label>
-                                <input name="address" id="Email" class="input" type="text">
-                            </div>        
+                                <input name="address" id="address" class="input" type="text"
+                                    placeholder="Enter your Address">
+                            </div>
                         </div>
-                        </div>
+                    </div>
 
 
-                        <div id="fn"></div>
-
-                        <div class="row">
+                    <div class="row">
 
                         <div class="col-4">
                             <div class="input-group">
                                 <label class="select-label">Sex</label>
-                                <select class="select">
+                                <select class="select" id="sex" name="sex">
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                 </select>
-                            </div>               
+                            </div>
                         </div>
 
                         <div class="col-4">
                             <div class="input-group">
                                 <label class="select-label">Staus</label>
-                                <select class="select">
+                                <select class="select" name="status" id="status">
                                     <option value="Full Time">Full Time</option>
                                     <option value="Part Time">Part Time</option>
                                 </select>
-                            </div>               
+                            </div>
                         </div>
 
                         <div class="col-2">
                             <div class="input-group">
                                 <label class="label">Date Hired</label>
-                                <input name="birthdate" id="Email" class="input" type="date">
-                            </div>     
+                                <input name="date_hired" id="date_hired" class="input" type="date">
+                            </div>
                         </div>
 
                         <div class="col-2">
-                           <div class="checkbox-container">
-                            <input type="checkbox" class="checkbox-input" id="myCheckbox">
-                            <label class="checkbox-label" for="myCheckbox">Is Active</label>
-                            <div class="checkbox-checkmark"></div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" class="checkbox-input" name="is_active" id="is_active">
+                                <label class="checkbox-label" for="myCheckbox">Is Active</label>
+                                <div class="checkbox-checkmark"></div>
                             </div>
                         </div>
 
@@ -152,105 +161,86 @@
                     <div class="row">
                         <h3>Educational Background</h3>
 
-                       <div class="col-12">
-                        <fieldset>
-                            <legend>Undergraduate</legend>
+                        <div class="col-12">
+                            <fieldset>
+                                <legend>Undergraduate</legend>
 
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="label">Course</label>
-                                        <input name="birthdate" id="Email" class="input" type="date">
-                                    </div>    
-                                    </div>
-        
+                                <div class="row">
                                     <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="label">Year Graduated</label>
-                                        <input name="birthdate" id="Email" class="input" type="date">
-                                    </div>    
+                                        <div class="input-group">
+                                            <label class="label">Course</label>
+                                            <input name="undergraduate_course" id="undergraduate_course" class="input" type="text"
+                                            placeholder="Enter your Undergraduate Course">
+                                        </div>
                                     </div>
-                            </div>
-                        </fieldset> 
-                       </div>
 
-                       <div class="col-12">
-                        <fieldset>
-                            <legend>Master's Degree</legend>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="label">Course</label>
-                                        <input name="birthdate" id="Email" class="input" type="date">
-                                    </div>    
-                                    </div>
-        
                                     <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="label">Year Graduated</label>
-                                        <input name="birthdate" id="Email" class="input" type="date">
-                                    </div>    
+                                        <div class="input-group">
+                                            <label class="label">Year Graduated</label>
+                                            <input name="undergraduate_year_graduated" id="undergraduate_year_graduated" class="input" type="date">
+                                        </div>
                                     </div>
-                            </div>
-                        </fieldset> 
-                       </div>
-
-                       <div class="col-12">
-                        <fieldset>
-                            <legend>Doctorate</legend>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="label">Course</label>
-                                        <input name="birthdate" id="Email" class="input" type="date">
-                                    </div>    
-                                    </div>
-        
-                                    <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="label">Year Graduated</label>
-                                        <input name="birthdate" id="Email" class="input" type="date">
-                                    </div>    
-                                    </div>
-                            </div>
-                        </fieldset> 
-                       </div>
-
-                       <div class="col-12">
-                        <div class="btn">
-                            <button type="button" class="primary-button" onclick="bitress.Utils.submit()">Submit</button>
+                                </div>
+                            </fieldset>
                         </div>
-                       </div>
 
+                        <div class="col-12">
+                            <fieldset>
+                                <legend>Master's Degree</legend>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group">
+                                            <label class="label">Course</label>
+                                            <input name="master_course" id="master_course" class="input" type="text"
+                                            placeholder="Enter your Master's Degree Course">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="input-group">
+                                            <label class="label">Year Graduated</label>
+                                            <input name="master_year_graduated" id="master_year_graduated" class="input" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="col-12">
+                            <fieldset>
+                                <legend>Doctorate</legend>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group">
+                                            <label class="label">Course</label>
+                                            <input name="doctorate_course" id="doctorate_course" class="input" type="text"
+                                            placeholder="Enter your Doctorate's Degree Course">
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="input-group">
+                                            <label class="label">Year Graduated</label>
+                                            <input name="doctorate_year_graduated" id="doctorate_year_graduated" class="input" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn">
+                                <button type="button" class="primary-button" onclick="bitress.Utils.submit()">Submit</button>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                
-
-                <div class="box-content">
-
-                    <div id="employee_tab" class="tabcontent">
-
-               
-
-                    </div>
-
-                    <div id="buto" class="tabcontent">
-                        <p>Buto is the capital city of England.</p>
-                    </div>
-
                 </div>
             </div>
-
-
-
         </div>
     </div>
 
-
-    <button id="openModalBtn">Open Modal</button>
 
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -262,16 +252,15 @@
                     <h1>Employee Profile Data</h1>
                     <div class="profile-data">
                         <h3>Employee Profile</h3>
-                        <p><strong>Last Name:</strong> <span id="display-lastname"></span></p>
-                        <p><strong>First Name:</strong> <span id="display-firstname"></span></p>
-                        <p><strong>Middle Name:</strong> <span id="display-middlename"></span></p>
+                        <p><strong>Full Name: </strong><span id="display-fullname"></span></p>
                         <p><strong>Birthdate:</strong> <span id="display-birthdate"></span></p>
+                        <p><strong>Age:</strong> <span id="display-age"></span></p>
                         <p><strong>Address:</strong> <span id="display-address"></span></p>
                         <p><strong>Sex:</strong> <span id="display-sex"></span></p>
                         <p><strong>Status:</strong> <span id="display-status"></span></p>
                         <p><strong>Date Hired:</strong> <span id="display-date-hired"></span></p>
                         <p><strong>Active Status:</strong> <span id="display-active-status"></span></p>
-                    </div> 
+                    </div>
                 </div>
                 <div class="col-6">
                     <h3>Educational Background</h3>
@@ -281,13 +270,13 @@
                             <p><strong>Course:</strong> <span id="display-undergraduate-course"></span></p>
                             <p><strong>Year Graduated:</strong> <span id="display-undergraduate-gradyear"></span></p>
                         </fieldset>
-                
+
                         <fieldset>
                             <legend>Master's Degree</legend>
                             <p><strong>Course:</strong> <span id="display-masters-course"></span></p>
                             <p><strong>Year Graduated:</strong> <span id="display-masters-gradyear"></span></p>
                         </fieldset>
-                
+
                         <fieldset>
                             <legend>Doctorate</legend>
                             <p><strong>Course:</strong> <span id="display-doctorate-course"></span></p>
@@ -298,7 +287,7 @@
             </div>
 
 
- 
+
         </div>
     </div>
 
@@ -306,8 +295,9 @@
         <p>Submitted to: Mr. Jim-mar delos Reyes</p>
         <p>Submitted by: Cyanne Justin Vega</p>
     </footer>
-    
-      <script src="script.js"></script>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
