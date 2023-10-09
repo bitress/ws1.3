@@ -14,6 +14,255 @@ html {
     background-color: var(--linen);
 }
 
+/* Select Option CSS */
+.select {
+    max-width: 300px;
+    width: 100%;
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+  }
+  
+  .select-label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+  }
+  
+  .select:hover,
+  .select:focus {
+    outline: none;
+    border-color: #05060f;
+  }
+  
+  .select:focus {
+    color: #05060fc2;
+  }
+  
+  /* Style for the select dropdown */
+  .select select {
+    appearance: none; /* Remove default styles */
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #05060f;
+    cursor: pointer;
+  }
+  
+  /* Style the arrow icon */
+  .select select::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicking on the arrow */
+  }
+  
+  /* Style the select options */
+  .select select option {
+    background-color: #05060f0a;
+    color: #05060f;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color .2s cubic-bezier(.25, .01, .25, 1) 0s, color .2s cubic-bezier(.25, .01, .25, 1) 0s;
+  }
+  
+  .select select option:hover {
+    background-color: #05060f;
+    color: #05060fc2;
+  }
+  
+
+  .input-group {
+    width: 100%;
+  }
+
+.input {
+    max-width: 300px;
+    width: 100%;
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+  }
+  
+  .input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #05060fc2;
+  }
+
+
+  /* Checkbox CSS */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-input {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #05060f;
+    border-radius: 0.3rem;
+    position: relative;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+  }
+  
+  .checkbox-input:checked {
+    border-color: #05060f;
+    background-color: #05060f;
+  }
+  
+  .checkbox-checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .2s cubic-bezier(.25, .01, .25, 1) 0s;
+  }
+  
+  .checkbox-input:checked ~ .checkbox-checkmark {
+    opacity: 1;
+  }
+
+  fieldset {
+    border: 1px solid black;
+  }
+  
+
+  .form {
+    padding: 20px;
+  }
+
+  .btn {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  /* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Styles for the button */
+#openModalBtn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#openModalBtn:hover {
+    background-color: #0056b3;
+}
+
+
+  /* Primary Button */
+.primary-button {
+    max-width: 300px;
+    width: 100%;
+    height: 44px;
+    background-color: var(--blue); /* Change the background color to your primary color */
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    color: black; /* Change the text color to a suitable color */
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    outline: none;
+    border-color: #05060f; /* Change the border color on hover/focus if needed */
+}
+
+/* Success Button */
+.success-button {
+    max-width: 300px;
+    width: 100%;
+    height: 44px;
+    background-color: var(--forest-green); /* Change the background color to your success color */
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    color: var(--linen); /* Change the text color to a suitable color */
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.success-button:hover,
+.success-button:focus {
+    outline: none;
+    border-color: #05060f; /* Change the border color on hover/focus if needed */
+}
+
+
 .container {
     max-width: 100%;
     margin: 40px;
